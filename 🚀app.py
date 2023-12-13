@@ -4,7 +4,7 @@ import streamlit as st
 
 # Set page configuration and title
 st.set_page_config(
-    #layout='wide',
+    layout='wide',
     initial_sidebar_state='expanded',
     page_title='AssociaGraph 📊',
     page_icon='📊'

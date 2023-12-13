@@ -1,15 +1,70 @@
 import streamlit as st
 
-left, right = st.columns(2)
+st.set_page_config(
+    layout='centered',
+    initial_sidebar_state='expanded',
+    page_title='😊02_About Me',
+    page_icon='📊'
+)
 
-st.title("Hi there! 👋")
 
-#left.image("./assets/me.png")
+st.markdown(
+"""
+ <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .content-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-container {
+            margin-right: 20px; /* Adjust the margin as needed */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .text-container {
+            max-width: 400px; /* Adjust the max-width as needed */
+        }
+    </style>
+
+    <div class="content-container">
+        <div class="image-container">
+            <img src="./about_me_imgs/me.jpg" alt="ME">
+        </div>
+        <div class="text-container">
+            <p>HELLO 👋<br>
+                I’m Ahmad Muhammad<br>
+                Data Analyst and Python Developer<br>
+                <a href="https://www.linkedin.com/in/your-linkedin-profile/" target="_blank">🔗LINKEDIN</a><br>
+                AHMADMUHAMMADGD@GMAIL.COM
+            </p>
+        </div>
+    </div>
+
+""", unsafe_allow_html=True
+)
+
+col1, col2, col3 = st.columns(3)
+col2.title("Hi there! 👋")
+col2.image("./about_me_imgs/me.jpg", width=350)
+st.title("I'm Ahmad Muhammad, a passionate data analysis and python developer based in Egypt.")
+
 
 st.write(
-    """
-        I'm Ahmad Muhammad, a passionate data analysis and python developer based in Egypt.
-        
+    """ 
         ## Background 🎓
         I have a background in EEC enginering and have been volunteered in business based activities for two years. My expertise includes fundraising, coding, and machine learning.
         
