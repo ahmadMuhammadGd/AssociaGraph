@@ -1,6 +1,5 @@
 from modules import streamlit_functions, read_module, apropri, graph
 import streamlit as st
-from streamlit_option_menu import option_menu
 
 
 # Set page configuration and title
