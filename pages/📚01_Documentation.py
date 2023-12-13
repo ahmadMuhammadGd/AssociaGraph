@@ -1,5 +1,10 @@
 import streamlit as st
-
+st.set_page_config(
+    layout='centered',
+    initial_sidebar_state='expanded',
+    page_title='📚01_Documentation',
+    page_icon='📊'
+)
 
 st.image("logo2.svg", width=350)
 
